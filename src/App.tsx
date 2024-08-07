@@ -1,11 +1,15 @@
 import './App.css'
 import Greet from './components/Greet';
+import { Heading } from './components/Heading';
 import { Status } from './components/Status';
+import Oscar from './components/Oscar';
 // import { Person } from './components/Person';
 // import PersonList from './components/PersonList';
 
 
 function App() {
+
+
   // const userName = {
   //   fname: 'di',
   //   lname: 'caprio',
@@ -34,7 +38,12 @@ function App() {
   return (
     <div className='App'>
       <Greet name="Hisham" messageCount={2024} isLoggedIn={true}/>
-      <Status status="error"/>
+      <Status status="success"/>
+      <Heading>placeholder text</Heading>
+      <Oscar>
+      <Heading>oscar goes to Leonardo None!</Heading>
+      </Oscar>
+      
       {/* <Person name={userName}/>
       <PersonList names={userList}/> */}
     </div>
