@@ -10,7 +10,9 @@ const PersonList = (props: PersonListProps) => {
         <div>
             {props.names.map((name) => {
                 return (
-                    <h2 key={name.first}>{name.fname} {name.lname}</h2>
+                    <h2 key={name.fname}>
+                        {name.fname} {name.lname}
+                        </h2>
                 )
             } )}
         </div>
