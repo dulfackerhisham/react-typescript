@@ -4,6 +4,7 @@ import { Heading } from './components/Heading';
 import { Status } from './components/Status';
 import Oscar from './components/Oscar';
 import { Button } from './components/Button';
+import LoggedIn from './components/state/LoggedIn';
 // import { Person } from './components/Person';
 // import PersonList from './components/PersonList';
 
@@ -48,6 +49,8 @@ function App() {
       <Button handleClick={(event, id) => {
         console.log("button clicked", event, id);
       }} />
+
+      <LoggedIn />
       
       {/* <Person name={userName}/>
       <PersonList names={userList}/> */}
